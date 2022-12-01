@@ -46,3 +46,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Begin */
+
+html {
+    /* our over-all width will be X */
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    display: flex;
+    background-color: white;
+    border-radius: 1em;
+    width: 500px;
+    height: 500px;
+
+    flex: 2 2 60%;
+    max-width: 60%;
+    max-height: 60%;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
