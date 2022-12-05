@@ -58,10 +58,10 @@ html {
 body {
     background-color: #60a9ff;
     display: flex;
-
-    margin-top: 10%;
     justify-content: center;
     align-items: center;
+
+    min-height: 100vh;
 }
 
 .panel {
@@ -69,29 +69,89 @@ body {
     background-color: white;
     border-radius: 1em;
 
-    flex: 2 2 65%;
-    max-width: 65%;
-    max-height: 70%;
+    width: 100vw;
+    max-width: 60vw;
 
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding: 5vh 5vw;
 
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 
 }
 
 .pricing-plan {
-    flex-shrink: 5;
+    display: flex;
+
+    min-height: 60vh;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid#60a9ff;
 }
 
-@media (max-width: 800px) {
+/* we only want lines from the "center," turn on to see what I'm
+talking about */
+.pricing-plan:last-child {
+    border-bottom: 0px;
+}
+
+.pricing-img {
+    margin-bottom: 1vh;;
+}
+
+.pricing-plan h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: grey
+
+    
+}
+
+.pricing-features-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-button {
+    border: 2px solid rgb(0, 179, 255);
+    padding: 4px 12px 4px 12px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.pricing-price {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(0, 127, 212);
+}
+
+@media (max-width: 1750px) {
     .panel {
-        max-width: 100%;
-    }
-
-    body {
-        margin: 2% 0px 2%;
+        max-width: 70vw;
     }
 }
+
+@media (max-width: 1535px) {
+    .panel {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 1350px) {
+    .panel {
+        min-width: 100vw;
+        flex-direction: column;
+    }
+    body {
+        margin: 2vh 2vw 2vh 2vw;
+
+    };
+}  
