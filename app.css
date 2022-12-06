@@ -90,7 +90,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    border-bottom: 1px solid#60a9ff;
+    
 }
 
 .pricing-img {
@@ -184,6 +184,9 @@ body {
     body {
         margin: 2vh 2vw 2vh 2vw;
 
+    }
+    .pricing-plan {
+        border-bottom: 1px solid#60a9ff;
     }
     /* we only want lines from the "center," turn on to see what I'm
     talking about */
