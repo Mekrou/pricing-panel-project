@@ -149,7 +149,7 @@ body {
     color: white;
 }
 
-.is-featured:hover {
+.is-featured:hover, .is-featured:focus {
     color:rgb(0, 179, 255);
 }
 
@@ -162,6 +162,8 @@ body {
     padding-bottom: 20px;
 }
 
+/* this is done much better if I styled for mobile first, and then set a single
+   breakpoint for larger screen sizes. Live and learn, I guess. */
 @media (max-width: 1750px) {
     .panel {
         max-width: 70vw;
