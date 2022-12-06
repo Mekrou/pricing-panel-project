@@ -77,6 +77,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 
+    text-align: center;
 }
 
 .pricing-plan {
@@ -92,17 +93,12 @@ body {
     border-bottom: 1px solid#60a9ff;
 }
 
-/* we only want lines from the "center," turn on to see what I'm
-talking about */
-.pricing-plan:last-child {
-    border-bottom: 0px;
-}
-
 .pricing-img {
-    margin-bottom: 1vh;;
+    margin-bottom: 1vh;
+    max-width: 100%;
 }
 
-.pricing-plan h2 {
+.pricing-header {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 600;
@@ -111,10 +107,19 @@ talking about */
     
 }
 
+.pricing-features {
+    margin: 5vh 0 2.5vh;
+    color: #016ff9;
+}
+
 .pricing-features-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 0.2;
+    padding: 15px 0;
+
+    border-top: 1px solid #e1f1ff;
 }
 
 .pricing-button {
@@ -127,7 +132,6 @@ talking about */
 }
 
 .pricing-price {
-    font-size: 2vw;
     text-transform: uppercase;
     font-weight: 800;
     color: rgb(0, 127, 212);
@@ -153,5 +157,10 @@ talking about */
     body {
         margin: 2vh 2vw 2vh 2vw;
 
-    };
+    }
+    /* we only want lines from the "center," turn on to see what I'm
+    talking about */
+    .pricing-plan:last-child {
+        border-bottom: 0px;
+    }
 }  
