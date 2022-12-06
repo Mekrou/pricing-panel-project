@@ -133,7 +133,9 @@ body {
     font-size: 20px;
     text-transform: uppercase;
 
-    color:rgb(0, 179, 255)
+    color:rgb(0, 179, 255);
+
+    transition: all 200ms ease-in-out;
 }
 
 .pricing-button:hover, .pricing-button:focus {
