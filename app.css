@@ -136,10 +136,19 @@ body {
     color:rgb(0, 179, 255)
 }
 
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+
+}
+
 .is-featured {
     background-color: #98d7ff;
     font-weight: 900;
     color: white;
+}
+
+.is-featured:hover {
+    color:rgb(0, 179, 255);
 }
 
 .pricing-price {
